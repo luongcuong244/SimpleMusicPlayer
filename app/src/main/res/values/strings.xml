@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="home">Home</string>
+    <string name="favorite">Favorite</string>
+    <string name="local">Local</string>
+    <string name="all_songs">All songs</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+    <string name="no_app_found_to_handle_the_share_action">No app found to handle the share action</string>
+    <string name="can_t_download_the_song_to_cache">Can\'t download the song to cache</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="please_grant_all_permissions">Please grant all permissions to access additional functionality.</string>
+    <string name="go_to_setting">Go to setting</string>
+    <string name="add_to_favourite_list">Add to favourite list</string>
+    <string name="delete_from_favourite_list">Delete from favourite list</string>
+    <string name="favorite_songs">Favorite Songs</string>
+    <string name="local_songs">Local songs</string>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/audio_controller_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_118sdp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.google.android.exoplayer2.ui.DefaultTimeBar
+        android:id="@+id/exo_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:buffered_color="#33000000"
+        app:played_color="#606060"
+        app:scrubber_drawable="@drawable/custom_seekbar_thumb"
+        app:unplayed_color="#33000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_7sdp">
+
+        <TextView
+            android:id="@+id/exo_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="00:12"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/exo_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="00:12"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_28sdp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_previous"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_previous" />
+
+        <RelativeLayout
+            android:id="@+id/ic_play_pause"
+            android:layout_width="@dimen/_53sdp"
+            android:layout_height="@dimen/_53sdp"
+            android:layout_marginHorizontal="@dimen/_40sdp">
+
+            <ImageView
+                android:id="@+id/exo_play"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_play" />
+
+            <ImageView
+                android:id="@+id/exo_pause"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_pause" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_next" />
+
+    </LinearLayout>
+
+</LinearLayout>
